@@ -3,7 +3,7 @@ import dynamic from "next/dynamic";
 import Head from 'next/head';
 
 
-const ExchangeTokens = dynamic (()=> import("../components/exchangetokens"),{ssr:false});
+import ExchangeTokens from "../components/exchangetokens";
 
 export default function test(){
     return(
